@@ -18,30 +18,14 @@ public class AnalyticsCounter {
 			
 	
 	public static void main(String args[]) throws Exception {
-	//
-		  
-		 
-		//Set the path of File
 		
-		/**
-		 * @see ReadSymptomDataFromFile
-		 */
-		SymptomHandler handler=new SymptomHandler();
-		
-		handler.setSymptomtList();
+		SymptomHandling handler = new SymptomHandling("symptoms.txt");
+		handler.setSymptomList();
 		handler.updateSymptom();
-		handler.affiche();
-		/**
-		 * List of the symptom with its characterize and methods
-		 * @see Symptom
-		 */
-
+		handler.toOrder();
+		handler.writer("result.out");
 		
 		
-		
-		/**
-		 *  next generate output
-		 */
 	
 	}
 }
