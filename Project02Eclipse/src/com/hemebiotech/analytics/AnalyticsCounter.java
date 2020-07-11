@@ -24,7 +24,9 @@ public class AnalyticsCounter {
 			handler.toOrder();
 			handler.writer("result.out");
 		}
-		
+		else {
+			System.out.println("Aucun parametre entré");
+		}
 		
 		
 		
